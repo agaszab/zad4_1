@@ -5,9 +5,9 @@ public class RightTriangle {
         double a = triangle.getA();
         double b = triangle.getB();
         double c = triangle.getC();
-        boolean prosty=false;
+        boolean prosty;
 
-        System.out.print("Trójkąt o bokach: "+a+", "+b+", "+c);
+        System.out.print("Trójkąt o bokach: " + a + ", " + b + ", " + c);
 
         a = a * a;
         b = b * b;
@@ -41,7 +41,6 @@ public class RightTriangle {
 
         return prosty;
     }
-
 
 
 }

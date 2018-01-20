@@ -1,7 +1,8 @@
 public class Triangle {
-   private double a;
-   private double b;
-   private double c;
+
+    private double a;
+    private double b;
+    private double c;
 
     public Triangle(int a, int b, int c) {
         this.a = a;
@@ -35,7 +36,6 @@ public class Triangle {
     public void setC(int c) {
         this.c = c;
     }
-
 
 
 }
