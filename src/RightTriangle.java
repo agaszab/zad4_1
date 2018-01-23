@@ -5,38 +5,25 @@ public class RightTriangle {
         double a = triangle.getA();
         double b = triangle.getB();
         double c = triangle.getC();
-        boolean prosty;
+        boolean prosty=false;
 
         System.out.print("Trójkąt o bokach: " + a + ", " + b + ", " + c);
 
-        a = a * a;
-        b = b * b;
-        c = c * c;
+        double aSquare = triangle.getA() * triangle.getA();
+        double bSquare = triangle.getB() * triangle.getB();
+        double cSquare = triangle.getC() * triangle.getC();
 
 
-        if ((a > b) && (a > c)) {
-            if (a == b + c) {
-                prosty = true;
-            } else {
-                prosty = false;
-            }
+        if ((aSquare > bSquare) && (aSquare > cSquare) && (aSquare == bSquare + cSquare)) {
+            prosty = true;
         }
 
-        if ((b > a) && (b > c)) {
-            if (b == a + c) {
+        if ((bSquare > aSquare) && (bSquare > cSquare) && (bSquare == aSquare + cSquare)) {
                 prosty = true;
-            } else {
-                prosty = false;
-            }
         }
 
-        if ((c > a) && (c > b)) {
-            if (c == a + b) {
+        if ((cSquare > aSquare) && (cSquare > bSquare) && (cSquare == aSquare + bSquare)) {
                 prosty = true;
-            } else {
-                prosty = false;
-
-            }
         }
 
         return prosty;

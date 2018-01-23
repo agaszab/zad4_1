@@ -6,14 +6,18 @@ public class Program {
 
         RightTriangle rightTriangle = new RightTriangle();
 
-        Triangle triangle = new Triangle(72, 12, 33);
+        Triangle triangle = new Triangle(5, 9, 5);
 
-        wynik = rightTriangle.isRightTriangle(triangle);
-
-        if (wynik == true) {
-            System.out.println(" jest prostokątny");
-        } else {
-            System.out.println(" nie jest prostokątny");
+        if (triangle.isTriangle(triangle)) {
+            wynik = rightTriangle.isRightTriangle(triangle);
+            if (wynik) {  //        nie trzeba pisać   if (wynik == true)
+                System.out.println(" jest prostokątny");
+            } else {
+                System.out.println(" nie jest prostokątny");
+            }
         }
+        else System.out.println("Z podanych odcinków nie da się utworzyć trójkąta.");
+
+
     }
 }
