@@ -13,6 +13,31 @@ public class Triangle {
     public Triangle() {
     }
 
+
+    boolean isTriangle(Triangle triangle) {
+
+        boolean warunek = false;
+
+        if ((triangle.a > triangle.b) && (triangle.a > triangle.c)) {
+            if (triangle.b + triangle.c > triangle.a)
+                warunek = true;
+        }
+
+
+        if ((triangle.b > triangle.a) && (triangle.b > triangle.c)) {
+            if (triangle.a + triangle.c > triangle.b)
+                warunek = true;
+        }
+
+        if ((triangle.c > triangle.a) && (triangle.c > triangle.a)) {
+            if (triangle.a + triangle.b > triangle.c)
+                warunek = true;
+        }
+        
+        return warunek;
+    }
+
+
     public double getA() {
         return a;
     }
